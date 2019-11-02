@@ -13,5 +13,5 @@
   scale_y_neglog10, scale_x_neglog10, scale_y_neglog2,
   scale_x_neglog2, melt.long, fiveNS, IQrange, sIQR,
   meanAD, CV, medCV, iqrCV, SNR, medSNR, iqrSNR,
-  pairwise.fun, qbxp.stats, qboxplot, thyroid
+  qbxp.stats, qboxplot, thyroid
   from package MKmisc

@@ -31,7 +31,6 @@ export(simCorVars,
        SNR,
        medSNR,
        iqrSNR,
-       pairwise.fun,
        qbxp.stats,
        qboxplot,
        thyroid)
