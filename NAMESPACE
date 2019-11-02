@@ -1,0 +1,41 @@
+import("stats", "ggplot2")
+importFrom("scales", "trans_new")
+importFrom("graphics", "par")
+export(simCorVars,
+       glog,
+       glog10,
+       glog2,
+       inv.glog,
+       inv.glog10,
+       inv.glog2,
+       scale_y_glog,
+       scale_x_glog,
+       scale_y_glog10,
+       scale_x_glog10,
+       scale_y_glog2,
+       scale_x_glog2,
+       scale_y_neglog,
+       scale_x_neglog,
+       scale_y_neglog10,
+       scale_x_neglog10,
+       scale_y_neglog2,
+       scale_x_neglog2,
+       melt.long,
+       fiveNS,
+       IQrange,
+       sIQR,
+       meanAD,
+       CV,
+       medCV,
+       iqrCV,
+       SNR,
+       medSNR,
+       iqrSNR,
+       pairwise.fun,
+       qbxp.stats,
+       qboxplot,
+       thyroid)
+
+S3method(qboxplot, default)
+S3method(qboxplot, formula)
+
