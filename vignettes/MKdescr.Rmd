@@ -46,6 +46,14 @@ to the sample standard deviation.
 meanAD(x)
 ```
 
+## Huber-type Skipped Mean and SD
+Huber-type skipped mean and SD are robust alternatives to the arithmetic mean 
+and sample standard deviation.
+```{r}
+skippedMean(x)
+skippedSD(x)
+```
+
 ## Five Number Summary
 There is a function that computes a so-called five number summary which in 
 contrast to function fivenum uses the first and third quartile instead of the 
