@@ -15,7 +15,10 @@ vignette: >
 ## Introduction  
 Package MKdescr includes a collection of functions that I found useful in my 
 daily work. It contains several functions for descriptive statistical data 
-analysis.
+analysis. Most of the functions were extracted from package MKmisc. Due to
+the growing number of dependencies required for MKmisc, I decided to split
+the package in smaller packages, where each package offers specific 
+functionality.
 
 We first load the package.
 ```{r}
