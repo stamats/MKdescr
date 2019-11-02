@@ -31,6 +31,8 @@ export(simCorVars,
        SNR,
        medSNR,
        iqrSNR,
+       skippedMean,
+       skippedSD,
        qbxp.stats,
        qboxplot,
        thyroid)

@@ -1,5 +1,5 @@
 Package: MKdescr
-Version: 0.1
+Version: 0.2
 Date: 2019-11-02
 Title: Functions for Descriptive Statistics
 Authors@R: person("Matthias", "Kohl", role = c("aut", "cre"),
