@@ -15,7 +15,7 @@ Type: \tab Package\cr
 Version: \tab 0.1\cr
 Date: \tab 2019-11-02\cr
 Depends: \tab R(>= 3.5.0)\cr
-Imports: \tab stats, utils\cr
+Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr
 License: \tab LGPL-3\cr
 URL: \tab http://www.stamats.de/\cr
