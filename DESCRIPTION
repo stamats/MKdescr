@@ -1,7 +1,7 @@
 Package: MKdescr
-Version: 0.2
-Date: 2019-11-02
-Title: Functions for Descriptive Statistics
+Version: 0.3
+Date: 2019-11-06
+Title: Descriptive Statistics
 Authors@R: person("Matthias", "Kohl", role = c("aut", "cre"),
                   email = "Matthias.Kohl@stamats.de", 
                   comment = c(ORCID = "0000-0001-9514-8910"))
@@ -11,7 +11,7 @@ Depends: R(>= 3.5.0)
 Imports: stats, graphics, ggplot2, scales
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
-Description: Contains several functions for descriptive statistics.
+Description: Contains several functions for descriptive statistics that are not available in standard R packages such as standardized IQR, Huber-type skipped mean, robust CV, robust SNR, as well as functions that support graphical visualization such as boxplots based on quartiles (not hinges), negative logarithms and generalized logarithms for ggplots.
 License: LGPL-3
 URL: http://www.stamats.de/
 

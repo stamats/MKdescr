@@ -143,6 +143,7 @@ qboxplot(x, \dots)
 }
 \examples{
 ## adapted examples from boxplot
+op <- par()
 
 ## qboxplot on a formula:
 qboxplot(count ~ spray, data = InsectSprays, col = "lightgray")
@@ -168,7 +169,7 @@ mat <- cbind(Uni05 = (1:100)/21, Norm = rnorm(100),
              `5T` = rt(100, df = 5), Gam2 = rgamma(100, shape = 2))
 qboxplot(as.data.frame(mat),
         main = "qboxplot(as.data.frame(mat), main = ...)")
-par(las=1)# all axis labels horizontal
+par(las = 1)# all axis labels horizontal
 qboxplot(as.data.frame(mat), main = "boxplot(*, horizontal = TRUE)",
         horizontal = TRUE)
 
@@ -186,5 +187,6 @@ qboxplot(len ~ dose, data = ToothGrowth, add = TRUE,
         subset = supp == "OJ", col = "orange")
 legend(2, 9, c("Ascorbic acid", "Orange juice"),
        fill = c("yellow", "orange"))
+par(op)
 }
 \keyword{hplot}

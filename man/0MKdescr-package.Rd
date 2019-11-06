@@ -3,17 +3,21 @@
 \alias{MKdescr}
 \docType{package}
 \title{
-Functions for Descriptive Statistics.
+Descriptive Statistics.
 }
 \description{
-Contains several functions for descriptive statistics.
+Contains several functions for descriptive statistics that are not available 
+in standard R packages such as standardized IQR, Huber-type skipped mean, 
+robust CV, robust SNR, as well as functions that support graphical 
+visualization such as boxplots based on quartiles (not hinges), negative 
+logarithms and generalized logarithms for ggplots.
 }
 \details{
 \tabular{ll}{
 Package: \tab MKdescr\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2019-11-02\cr
+Version: \tab 0.3\cr
+Date: \tab 2019-11-06\cr
 Depends: \tab R(>= 3.5.0)\cr
 Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr
