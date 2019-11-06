@@ -20,8 +20,8 @@ skippedSD(x, na.rm = FALSE, constant = 3.0)
   
   For computing the Huber-type skipped mean, one first computes median and
   MAD. In the next step, all observations outside the interval 
-  [median - 3 x MAD, median + 3 x MAD] are removed and arithmetic mean and 
-  sample standard deviation are computed on the remaining data.
+  [median - constant x MAD, median + constant x MAD] are removed and 
+  arithmetic mean and sample standard deviation are computed on the remaining data.
 }
 \references{
   Hampel, F.R. (1985). The breakdown points of the mean combined with some 

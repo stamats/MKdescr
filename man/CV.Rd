@@ -4,7 +4,8 @@
 \alias{iqrCV}
 \title{ Compute CV }
 \description{
-  The functions compute CV as well as two robust versions of the CV.
+  The functions compute coefficient of variation (CV) as well as two robust 
+  versions of the CV.
 }
 \usage{
 CV(x, na.rm = FALSE)
@@ -14,8 +15,7 @@ CV(x, na.rm = FALSE)
   \item{na.rm}{logical. Should missing values be removed?}
 }
 \details{
-  The functions compute the (classical) coefficient of variation as well as
-  two robust variants.
+  The functions compute the (classical) CV as well as two robust variants.
 
   \code{medCV} uses the (standardized) MAD instead of SD and median instead of mean.
 

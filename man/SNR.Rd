@@ -4,7 +4,8 @@
 \alias{iqrSNR}
 \title{ Compute SNR }
 \description{
-  The functions compute SNR as well as two robust versions of the SNR.
+  The functions compute the signal to noise ration (SNR) as well as two robust 
+  versions of the SNR.
 }
 \usage{
 SNR(x, na.rm = FALSE)
@@ -14,8 +15,7 @@ SNR(x, na.rm = FALSE)
   \item{na.rm}{logical. Should missing values be removed?}
 }
 \details{
-  The functions compute the (classical) coefficient of variation as well as
-  two robust variants.
+  The functions compute the (classical) SNRas well as two robust variants.
 
   \code{medSNR} uses the (standardized) MAD instead of SD and median instead of mean.
 
