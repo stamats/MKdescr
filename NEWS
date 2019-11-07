@@ -2,6 +2,11 @@
 ## NEWS to package MKdescr
 ###############################################################################
 
+###########################################################
+## Version 0.5
+###########################################################
+- minor modification of package description in DESCRIPTION and Rd file
+
 
 ###########################################################
 ## Version 0.4
@@ -9,16 +14,19 @@
 - extended description in DESCRIPTION file
 - improved documentation of CV and SNR
 
+
 ###########################################################
 ## Version 0.3
 ###########################################################
 - slightly changed the title of the package and extended the description
+
 
 ###########################################################
 ## Version 0.2
 ###########################################################
 - added functions skippedMean and skippedSD for computing Huber-type
   skipped mean and SD.
+
 
 ###########################################################
 ## Version 0.1
