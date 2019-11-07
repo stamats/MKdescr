@@ -2,8 +2,8 @@
 The repository includes the development version of R package MKdescr
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/MKmisc)](http://cran.r-project.org/package=MKmisc)
-[![cran checks](https://cranchecks.info/badges/summary/MKmisc)](https://cran.r-project.org/web/checks/check_results_MKmisc.html)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/MKdescr)](http://cran.r-project.org/package=MKdescr)
+[![cran checks](https://cranchecks.info/badges/summary/MKdescr)](https://cran.r-project.org/web/checks/check_results_MKdescr.html)
 
 ## Description
 Functions for descriptive statistics that are not available in standard R packages 
