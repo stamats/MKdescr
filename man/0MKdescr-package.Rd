@@ -16,8 +16,8 @@ quartiles (not hinges), negative logarithms and generalized logarithms for ggplo
 \tabular{ll}{
 Package: \tab MKdescr\cr
 Type: \tab Package\cr
-Version: \tab 0.4\cr
-Date: \tab 2019-11-06\cr
+Version: \tab 0.5\cr
+Date: \tab 2019-11-07\cr
 Depends: \tab R(>= 3.5.0)\cr
 Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr
