@@ -6,7 +6,7 @@ The repository includes the development version of R package MKdescr
 [![cran checks](https://cranchecks.info/badges/summary/MKdescr)](https://cran.r-project.org/web/checks/check_results_MKdescr.html)
 
 ## Description
-Functions for descriptive statistics that are not available in standard R packages 
+Functions that are not available in standard R packages 
 such as standardized interquartile range (IQR), Huber-type skipped mean, 
 robust coefficient of variation (CV), robust signal to noise ratio (SNR), 
 as well as functions that support graphical visualization such as boxplots 
