@@ -11,7 +11,7 @@
 CV(x, na.rm = FALSE)
 }
 \arguments{
-  \item{x}{ numeric vector. }
+  \item{x}{ numeric vector with positive numbers. }
   \item{na.rm}{logical. Should missing values be removed?}
 }
 \details{
