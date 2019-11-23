@@ -6,9 +6,8 @@
 Descriptive Statistics.
 }
 \description{
-Functions that are not available in standard R packages such as standardized 
-interquartile range (IQR), Huber-type skipped mean, robust coefficient of 
-variation (CV), robust signal to noise ratio (SNR), as well as 
+Computation of standardized interquartile range (IQR), Huber-type skipped mean, 
+robust coefficient of variation (CV), robust signal to noise ratio (SNR), as well as 
 functions that support graphical visualization such as boxplots based on 
 quartiles (not hinges), negative logarithms and generalized logarithms for ggplots.
 }
