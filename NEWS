@@ -5,9 +5,10 @@
 ###########################################################
 ## Version 0.5
 ###########################################################
-- minor modification of package description in DESCRIPTION and Rd file
+- added references to the description and vignette
 - function simCorVars gained arguments to set mean and sd of the simulated
   variables.
+
 
 ###########################################################
 ## Version 0.4

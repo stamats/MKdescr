@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
     toc: true
+bibliography: MKdescr.bib
 vignette: >
   %\VignetteIndexEntry{MKdesr}
   %\VignetteEngine{knitr::rmarkdown}
@@ -44,14 +45,14 @@ sd(x)
 
 ## Mean Absolute Deviation
 The mean absolute deviation under the assumption of symmetry is a robust alternative
-to the sample standard deviation.
+to the sample standard deviation [see @Tukey1960].
 ```{r}
 meanAD(x)
 ```
 
 ## Huber-type Skipped Mean and SD
 Huber-type skipped mean and SD are robust alternatives to the arithmetic mean 
-and sample standard deviation.
+and sample standard deviation [see @Hampel1985].
 ```{r}
 skippedMean(x)
 skippedSD(x)
@@ -70,7 +71,7 @@ fiveNS(x)
 There are functions to compute the (classical) coefficient of variation as well
 as two robust variants. In case of the robust variants, the mean is replaced 
 by the median and the SD is replaced by the (standardized) MAD and 
-the (standardized) IQR, respectively.
+the (standardized) IQR, respectively [see Arachchige2019].
 ```{r}
 ## 5% outliers
 out <- rbinom(100, prob = 0.05, size = 1)
@@ -108,16 +109,20 @@ boxplot(x, main = "Lower and upper hinge")
 The difference between the two versions often is hardly visible.
 
 ## Generalized Logarithm
-The generalized logarithm may be useful as a variance stabilizing transformation
-when also negative values are present.
-```{r}
+The generalized logarithm, which corresponds to the shifted area hyperbolic sine,
+$$
+  \log(x + \sqrt{x^2 + 1}) - \log(2)
+$$
+may be useful as a variance stabilizing transformation when also negative values 
+are present.
+```{r, fig.width = 7, fig.height = 7}
 curve(log, from = -3, to = 5)
 curve(glog, from = -3, to = 5, add = TRUE, col = "orange")
 legend("topleft", fill = c("black", "orange"), legend = c("log", "glog"))
 ```
 
 As in case of function log there is also glog10 and glog2.
-```{r}
+```{r, fig.width = 7, fig.height = 7}
 curve(log10(x), from = -3, to = 5)
 curve(glog10(x), from = -3, to = 5, add = TRUE, col = "orange")
 legend("topleft", fill = c("black", "orange"), legend = c("log10", "glog10"))
@@ -153,7 +158,7 @@ thyroid(TSH = 1.5, fT3 = 2.5, fT4 = 14, TSHref = c(0.2, 3.0),
 
 
 ## Generalized and Negative Logarithm as Transformations
-We can use the generalized logarithm for transforming the axes in ggplot2 plots.
+We can use the generalized logarithm for transforming the axes in ggplot2 plots [@Wickham2016].
 ```{r}
 library(ggplot2)
 data(mpg)
@@ -217,3 +222,6 @@ ggplot(test.long.gr, aes(x = variable, y = value, fill = group)) +
 ```{r}
 sessionInfo()
 ```
+
+
+## References
