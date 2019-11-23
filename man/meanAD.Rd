@@ -25,7 +25,7 @@ meanAD(x, na.rm = FALSE, constant = sqrt(pi/2))
 }
 \references{
   Tukey, J. W. (1960). A survey of sampling from contaminated distribution.
-  In Olink, I., editor, \emph{Contributions to Probablity and Statistics. 
+  In Olkin, I., editor, \emph{Contributions to Probability and Statistics. 
   Essays in Honor of H. Hotelling.}, pages 448-485. Stanford University Press.
 }
 \author{ Matthias Kohl \email{Matthias.Kohl@stamats.de}}
