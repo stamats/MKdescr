@@ -1,6 +1,6 @@
 Package: MKdescr
-Version: 0.5
-Date: 2019-11-23
+Version: 0.6
+Date: 2019-11-27
 Title: Descriptive Statistics
 Authors@R: person("Matthias", "Kohl", role = c("aut", "cre"),
                   email = "Matthias.Kohl@stamats.de", 
@@ -11,7 +11,7 @@ Depends: R(>= 3.5.0)
 Imports: stats, graphics, ggplot2, scales
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
-Description: Computation of standardized interquartile range (IQR), Huber-type skipped mean (Hampel (1985), <doi:10.2307/1268758>), robust coefficient of variation (CV) (Arachchige et al. (2019), <arXiv:1907.01110>), robust signal to noise ratio (SNR), as well as functions that support graphical visualization such as boxplots based on quartiles (not hinges), negative logarithms and generalized logarithms for ggplot2 (Wickham (2016), ISBN:978-3-319-24277-4).
+Description: Computation of standardized interquartile range (IQR), Huber-type skipped mean (Hampel (1985), <doi:10.2307/1268758>), robust coefficient of variation (CV) (Arachchige et al. (2019), <arXiv:1907.01110>), robust signal to noise ratio (SNR), as well as functions that support graphical visualization such as boxplots based on quartiles (not hinges), negative logarithms and generalized logarithms for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4).
 License: LGPL-3
 URL: http://www.stamats.de/
 

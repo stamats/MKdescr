@@ -11,14 +11,14 @@ Computation of standardized interquartile range (IQR), Huber-type skipped mean
 (Arachchige et al. (2019), <arXiv:1907.01110>), robust signal to noise ratio (SNR), 
 as well as functions that support graphical visualization such as boxplots 
 based on quartiles (not hinges), negative logarithms and generalized logarithms 
-for ggplot2 (Wickham (2016), ISBN:978-3-319-24277-4).
+for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4).
 }
 \details{
 \tabular{ll}{
 Package: \tab MKdescr\cr
 Type: \tab Package\cr
-Version: \tab 0.5\cr
-Date: \tab 2019-11-23\cr
+Version: \tab 0.6\cr
+Date: \tab 2019-11-27\cr
 Depends: \tab R(>= 3.5.0)\cr
 Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr
