@@ -1,20 +1,23 @@
 CV <- function(x, na.rm = FALSE){
   stopifnot(is.numeric(x))
+  if(na.rm) x <- x[!is.na(x)]
   if(any(x <= 0))
     stop("Your data must be positive!")
-  sd(x, na.rm = na.rm)/mean(x, na.rm = na.rm)
+  sd(x)/mean(x)
 }
 
 medCV <- function(x, na.rm = FALSE){
   stopifnot(is.numeric(x))
+  if(na.rm) x <- x[!is.na(x)]
   if(any(x <= 0))
     stop("Your data must be positive!")
-  mad(x, na.rm = na.rm)/median(x, na.rm = na.rm)
+  mad(x)/median(x)
 }
 
 iqrCV <- function(x, na.rm = FALSE){
   stopifnot(is.numeric(x))
+  if(na.rm) x <- x[!is.na(x)]
   if(any(x <= 0))
     stop("Your data must be positive!")
-  sIQR(x, na.rm = na.rm)/median(x, na.rm = na.rm)
+  sIQR(x)/median(x)
 }

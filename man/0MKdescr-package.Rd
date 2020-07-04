@@ -18,7 +18,7 @@ for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4).
 Package: \tab MKdescr\cr
 Type: \tab Package\cr
 Version: \tab 0.6\cr
-Date: \tab 2019-11-27\cr
+Date: \tab 2020-07-04\cr
 Depends: \tab R(>= 3.5.0)\cr
 Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr
