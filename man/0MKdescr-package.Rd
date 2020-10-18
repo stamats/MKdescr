@@ -9,9 +9,9 @@ Descriptive Statistics.
 Computation of standardized interquartile range (IQR), Huber-type skipped mean 
 (Hampel (1985), <doi:10.2307/1268758>), robust coefficient of variation (CV) 
 (Arachchige et al. (2019), <arXiv:1907.01110>), robust signal to noise ratio (SNR), 
-as well as functions that support graphical visualization such as boxplots 
-based on quartiles (not hinges), negative logarithms and generalized logarithms 
-for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4).
+z-score, standardized mean difference (SMD), as well as functions that support 
+graphical visualization such as boxplots based on quartiles (not hinges), negative 
+logarithms and generalized logarithms for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4).
 }
 \details{
 \tabular{ll}{

@@ -2,7 +2,7 @@
 \alias{SMD}
 \title{ Compute Standardized Mean Difference (SMD)}
 \description{
-  The function computes the standardized mean difference, where a bias-correction
+  The function computes the standardized mean difference, where a bias correction
   can be applied.
 }
 \usage{
@@ -39,12 +39,12 @@ SMD(x, y, bias.cor = TRUE, var.equal = FALSE, na.rm = FALSE)
 }
 \references{
   Aoki, S. (2020). Effect sizes of the differences between means without assuming 
-  variance equality and between a mean and a constan. \emph{Heliyon}, \bold{6}(1), e03306.
+  variance equality and between a mean and a constant. \emph{Heliyon}, \bold{6}(1), e03306.
   
   Cohen, J. (1988). Statistical Power Analysis for the Behavioral Sciences. 
   Routledge. ISBN 978-1-134-74270-7.
   
-  Hedges, L. V. (1981). Distribution theory for Glass’s estimator of effectsize 
+  Hedges, L. V. (1981). Distribution theory for Glass's estimator of effectsize 
   and related estimators. \emph{Journal of Educational Statistics} \bold{6}, 107-128.
 }
 \author{ Matthias Kohl \email{Matthias.Kohl@stamats.de}}

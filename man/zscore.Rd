@@ -19,7 +19,7 @@ iqrZscore(x, na.rm = FALSE, type = 7, constant = 2*qnorm(0.75))
           algorithms; for more details see \code{\link[stats]{quantile}}. }
   \item{constant}{ standardizing contant; see \code{\link[stats]{mad}}
           and \code{\link{sIQR}}, respectively. }
-}}
+}
 \details{
   The functions compute the (classical) zscore as well as two robust variants.
 
