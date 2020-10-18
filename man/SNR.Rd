@@ -9,10 +9,16 @@
 }
 \usage{
 SNR(x, na.rm = FALSE)
+medSNR(x, na.rm = FALSE, constant = 1/qnorm(0.75))
+iqrSNR(x, na.rm = FALSE, type = 7, constant = 2*qnorm(0.75))
 }
 \arguments{
   \item{x}{ numeric vector. }
   \item{na.rm}{logical. Should missing values be removed?}
+  \item{type}{ an integer between 1 and 9 selecting one of nine quantile
+          algorithms; for more details see \code{\link[stats]{quantile}}. }
+  \item{constant}{ standardizing contant; see \code{\link[stats]{mad}}
+          and \code{\link{sIQR}}, respectively. }
 }
 \details{
   The functions compute the (classical) SNRas well as two robust variants.
