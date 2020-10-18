@@ -28,6 +28,7 @@ export(simCorVars,
        CV,
        medCV,
        iqrCV,
+       SMD,
        SNR,
        medSNR,
        iqrSNR,
@@ -35,7 +36,10 @@ export(simCorVars,
        skippedSD,
        qbxp.stats,
        qboxplot,
-       thyroid)
+       thyroid,
+       zscore,
+       medZscore,
+       iqrZscore)
 
 S3method(qboxplot, default)
 S3method(qboxplot, formula)
