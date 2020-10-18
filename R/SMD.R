@@ -15,7 +15,7 @@ SMD <- function(x, y, bias.cor = TRUE, var.equal = FALSE, na.rm = FALSE){
     SMD <- (AMx - AMy)/sqrt(VAR)
     if(bias.cor){
       df <- nx+ny-2
-      J <- lgamma(df/2)/(sqrt(df/2)*gamma((df-1)/2))
+      J <- lgamma(df/2)-(log(sqrt(df/2)) + lgamma((df-1)/2))
       SMD <- exp(J)*SMD
     }
   }else{
@@ -23,7 +23,7 @@ SMD <- function(x, y, bias.cor = TRUE, var.equal = FALSE, na.rm = FALSE){
     SMD <- (AMx-AMy)/sqrt(VAR)/sqrt(nx*ny/(nx+ny))
     if(bias.cor){
       df <- (VARx/nx + VARy/ny)^2/(VARx^2/(nx^2*(nx-1)) + VARy^2/(ny^2*(ny-1)))
-      J <- lgamma(df/2)/(sqrt(df/2)*gamma((df-1)/2))
+      J <- lgamma(df/2) - (log(sqrt(df/2)) + lgamma((df-1)/2))
       SMD <- exp(J)*SMD
     }
   }

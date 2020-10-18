@@ -99,7 +99,8 @@ iqrSNR(x)
 We compute the standardized mean difference also known as Cohen's und Hogdes' g.
 In addition, there is a new proposal in case of unequal variances.
 ```{r}
-n1 <- length(x)
+n1 <- 100
+x <- rnorm(100)
 n2 <- 150
 y <- rnorm(n2, mean = 3, sd = 2)
 ## true value
