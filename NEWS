@@ -7,6 +7,10 @@
 ###########################################################
 - changed behaviour of CV functions in case of NA values to correct a minor
   bug.
+- extended medCV and iqrCV by argument constant and type.
+- introduced functions zscore, medZscore and iqrZscore to compute z-scores
+- introduced function SMD for calculating the standardized mean difference
+  with and without equal variances
 
 ###########################################################
 ## Version 0.5
