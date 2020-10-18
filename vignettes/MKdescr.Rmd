@@ -116,6 +116,28 @@ SMD(x, y, bias.cor = FALSE, var.equal = TRUE)
 ```
 
 
+## z-Score
+There are functions to compute z-score and robust variants of z-score based
+on median and MAD, respectively median and IQR.
+```{r}
+## 10% outliers
+out <- rbinom(100, prob = 0.1, size = 1)
+sum(out)
+x <- (1-out)*rnorm(100, mean = 10, sd = 2) + out*25
+z <- zscore(x)
+z.med <- medZscore(x)
+z.iqr <- iqrZscore(x)
+## mean without outliers (should by close to 0)
+mean(z[!out])
+mean(z.med[!out])
+mean(z.iqr[!out])
+## sd without outliers (should by close to 1)
+sd(z[!out])
+sd(z.med[!out])
+sd(z.iqr[!out])
+```
+
+
 ## Box- and Whisker-Plot
 In contrast to the standard function boxplot which uses the lower and upper 
 hinge for defining the box and the whiskers, the function qboxplot uses the
