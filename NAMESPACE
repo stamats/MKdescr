@@ -39,7 +39,9 @@ export(simCorVars,
        thyroid,
        zscore,
        medZscore,
-       iqrZscore)
+       iqrZscore,
+       illustrate.quantile,
+       illustrate.boxplot)
 
 S3method(qboxplot, default)
 S3method(qboxplot, formula)
