@@ -26,6 +26,24 @@ We first load the package.
 library(MKdescr)
 ```
 
+## Illustration of quantiles and box- and whisker plots
+The following function should help to understand the meaning and computation
+of quantiles.
+```{r, fig.width=7, fig.height=7}
+x <- 1:10
+illustrate.quantile(x, alpha = 0.2)
+illustrate.quantile(x, alpha = 0.5, type = 7)
+illustrate.quantile(x, alpha = 0.8, type = c(2, 7))
+```
+
+In addition, there is a function to illustrate the meaning and computation
+of box-and-whisker plots.
+```{r, fig.width=7, fig.height=7}
+set.seed(123)
+illustrate.boxplot(rt(50, df = 5))
+```
+
+
 ## IQR
 I implemented function IQrange before the standard function IQR gained the 
 type argument. Since 2010 (r53643, r53644) the function is identical to 
@@ -152,6 +170,7 @@ boxplot(x, main = "Lower and upper hinge")
 
 The difference between the two versions often is hardly visible.
 
+
 ## Generalized Logarithm
 The generalized logarithm, which corresponds to the shifted area hyperbolic sine,
 $$
@@ -203,7 +222,7 @@ thyroid(TSH = 1.5, fT3 = 2.5, fT4 = 14, TSHref = c(0.2, 3.0),
 
 ## Generalized and Negative Logarithm as Transformations
 We can use the generalized logarithm for transforming the axes in ggplot2 plots [@Wickham2016].
-```{r}
+```{r, fig.width=7, fig.height=7}
 library(ggplot2)
 data(mpg)
 p1 <- ggplot(mpg, aes(displ, hwy)) + geom_point()
@@ -217,7 +236,7 @@ p1 + scale_y_glog10()
 The negative logrithm is for instance useful for displaying p values. The 
 interesting values are on the top. This is for instance used in a so-called
 volcano plot.
-```{r}
+```{r, fig.width=7, fig.height=7}
 x <- matrix(rnorm(1000, mean = 10), nrow = 10)
 g1 <- rep("control", 10)
 y1 <- matrix(rnorm(500, mean = 11.25), nrow = 10)
@@ -246,7 +265,6 @@ Often it's better to have the data in a long format than in a wide format; e.g.,
 when plotting with package ggplot2. The necessary transformation can be done
 with function melt.long.
 ```{r, fig.width=7, fig.height=7}
-library(ggplot2)
 ## some random data
 test <- data.frame(x = rnorm(10), y = rnorm(10), z = rnorm(10))
 test.long <- melt.long(test)
