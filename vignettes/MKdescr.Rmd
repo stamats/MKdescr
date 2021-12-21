@@ -1,5 +1,5 @@
 ---
-title: "Package MKdescr"
+title: "MKdescr"
 author: "Matthias Kohl"
 date: "`r Sys.Date()`"
 output: 
