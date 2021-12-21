@@ -7,7 +7,7 @@ output:
     toc: true
 bibliography: MKdescr.bib
 vignette: >
-  %\VignetteIndexEntry{MKdesr}
+  %\VignetteIndexEntry{MKdescr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{utf8}
 ---
