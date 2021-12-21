@@ -17,6 +17,10 @@ illustrate.boxplot <- function(x){
           panel.grid.major.y = element_blank(),
           panel.grid.minor.y = element_blank()) + 
     geom_boxplot() + ylim(0, 2) + 
+    geom_vline(xintercept = iqr[1]-1.5*diff(iqr), linetype = "dotted",
+               color = "#5C88DA") + 
+    geom_vline(xintercept = iqr[2]+1.5*diff(iqr), linetype = "dotted",
+               color = "#5C88DA") + 
     geom_point(aes_string(x = "x", y = "y"), data = DFiqr, pch = "|", size = 10, 
                position = position_nudge(y=0.03), color = "#CC0C00") +
     geom_line(data = DFiqr, aes_string(x = "x", y = "y"), 
@@ -43,24 +47,26 @@ illustrate.boxplot <- function(x){
              label = "maximum range of whiskers", color = "#CC0C00") +
     geom_line(data = DFout1, aes_string(x = "x", y = "y"), 
               color = "#CC0C00", position = position_nudge(y = 0.02)) +
-    annotate(geom = "text", x = mean(DFout1$x), y = 1.95, 
+    annotate(geom = "text", x = mean(DFout1$x), y = 1.85, 
              label = "outlier region", color = "#CC0C00") +
     geom_line(data = DFout2, aes_string(x = "x", y = "y"), 
               color = "#CC0C00", position = position_nudge(y = 0.02)) +
-    annotate(geom = "text", x = mean(DFout2$x), y = 1.95, 
+    annotate(geom = "text", x = mean(DFout2$x), y = 1.85, 
              label = "outlier region", color = "#CC0C00") +
-    annotate(geom = "text", x = median(x), y = 0.45, label = "median", 
+    annotate(geom = "text", x = median(x), y = 0.35, label = "median", 
              angle = 270, color = "#5C88DA") +
-    annotate(geom = "text", x = iqr[1], y = 0.45, 
-             label = "1. quartile", angle = 270, color = "#5C88DA") +
-    annotate(geom = "text", x = iqr[2], y = 0.45, 
-             label = "3. quartile", angle = 270, color = "#5C88DA") +
-    annotate(geom = "text", x = iqr[1]-1.5*diff(iqr), y = 0.45, 
-             label = "1. quartile - 1.5 x IQR", angle = 270, 
+    annotate(geom = "text", x = iqr[1], y = 0.35, 
+             label = "1. quartile (Q1)", angle = 270, color = "#5C88DA") +
+    annotate(geom = "text", x = iqr[2], y = 0.35, 
+             label = "3. quartile (Q3)", angle = 270, color = "#5C88DA") +
+    annotate(geom = "text", x = iqr[1]-1.5*diff(iqr), y = 0.35, 
+             label = "lower fence = \n1. quartile - 1.5 x IQR", angle = 270, 
              color = "#5C88DA") +
-    annotate(geom = "text", x = iqr[2]+1.5*diff(iqr), y = 0.45, 
-             label = "3. quartile + 1.5 x IQR", angle = 270, 
+    annotate(geom = "text", x = iqr[2]+1.5*diff(iqr), y = 0.35, 
+             label = "upper fence = \n3. quartile + 1.5 x IQR", angle = 270, 
              color = "#5C88DA") +
+    annotate(geom = "text", x = (iqr[1]+iqr[2])/2, y = 0.05, 
+             label = "IQR = Q3 - Q1", color = "#5C88DA") +
     ggtitle("Illustration of Box- and Whisker-Plot")
   print(gg)
   invisible(gg)
