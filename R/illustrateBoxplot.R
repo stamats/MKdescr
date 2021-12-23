@@ -10,6 +10,9 @@ illustrate.boxplot <- function(x){
                              iqr[1]-1.5*diff(iqr)), y = 1.75)
   DFout2 <- data.frame(x = c(iqr[2]+1.5*diff(iqr), 
                              max(x, iqr[2]+2.5*diff(iqr))), y = 1.75)
+  x.ok <- x[x >= iqr[1]-1.5*diff(iqr) & x <= iqr[2]+1.5*diff(iqr)]
+  low.fence <- max(min(x.ok), iqr[1]-1.5*diff(iqr))
+  upp.fence <- min(max(x.ok), iqr[2]+1.5*diff(iqr))
   gg <- ggplot(DF, aes_string(x = "x", y = "y")) +
     theme_minimal() + 
     theme(axis.title.y=element_blank(), axis.text.y=element_blank(),
@@ -18,8 +21,12 @@ illustrate.boxplot <- function(x){
           panel.grid.minor.y = element_blank()) + 
     geom_boxplot() + ylim(0, 2) + 
     geom_vline(xintercept = iqr[1]-1.5*diff(iqr), linetype = "dotted",
-               color = "#5C88DA") + 
+               color = "#CC0C00") + 
     geom_vline(xintercept = iqr[2]+1.5*diff(iqr), linetype = "dotted",
+               color = "#CC0C00") + 
+    geom_vline(xintercept = low.fence, linetype = "dotted",
+               color = "#5C88DA") + 
+    geom_vline(xintercept = upp.fence, linetype = "dotted",
                color = "#5C88DA") + 
     geom_point(aes_string(x = "x", y = "y"), data = DFiqr, pch = "|", size = 10, 
                position = position_nudge(y=0.03), color = "#CC0C00") +
@@ -60,10 +67,16 @@ illustrate.boxplot <- function(x){
     annotate(geom = "text", x = iqr[2], y = 0.35, 
              label = "3. quartile (Q3)", angle = 270, color = "#5C88DA") +
     annotate(geom = "text", x = iqr[1]-1.5*diff(iqr), y = 0.35, 
-             label = "lower fence = \n1. quartile - 1.5 x IQR", angle = 270, 
+             label = "1. quartile - 1.5 x IQR", angle = 270, vjust = 1.5,
+             color = "#CC0C00") +
+    annotate(geom = "text", x = low.fence, y = 0.35, 
+             label = "lower fence", angle = 270, vjust = -0.75,
              color = "#5C88DA") +
     annotate(geom = "text", x = iqr[2]+1.5*diff(iqr), y = 0.35, 
-             label = "upper fence = \n3. quartile + 1.5 x IQR", angle = 270, 
+             label = "3. quartile + 1.5 x IQR", angle = 270, vjust = -0.75,
+             color = "#CC0C00") +
+    annotate(geom = "text", x = upp.fence, y = 0.35, 
+             label = "upper fence", angle = 270, vjust = 1.5,
              color = "#5C88DA") +
     annotate(geom = "text", x = (iqr[1]+iqr[2])/2, y = 0.05, 
              label = "IQR = Q3 - Q1", color = "#5C88DA") +
