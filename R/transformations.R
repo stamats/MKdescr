@@ -25,6 +25,18 @@ scale_y_glog2 <- function(...){
 scale_x_glog2 <- function(...){
   scale_x_continuous(..., trans = glog2_trans())
 }
+scale_y_log <- function(...){
+  scale_y_continuous(..., trans = log_trans())
+}
+scale_x_log <- function(...){
+  scale_x_continuous(..., trans = log_trans())
+}
+scale_y_log2 <- function(...){
+  scale_y_continuous(..., trans = log2_trans())
+}
+scale_x_log2 <- function(...){
+  scale_x_continuous(..., trans = log2_trans())
+}
 
 neglog_breaks <- function (n = 5, base = 10){
   function(x){

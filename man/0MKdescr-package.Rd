@@ -18,7 +18,7 @@ logarithms and generalized logarithms for 'ggplot2' (Wickham (2016), ISBN:978-3-
 Package: \tab MKdescr\cr
 Type: \tab Package\cr
 Version: \tab 0.8\cr
-Date: \tab 2021-12-21\cr
+Date: \tab 2022-11-08\cr
 Depends: \tab R(>= 3.5.0)\cr
 Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr

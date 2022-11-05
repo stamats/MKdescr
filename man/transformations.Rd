@@ -8,6 +8,10 @@
 \alias{scale_x_glog10}
 \alias{scale_y_glog2}
 \alias{scale_x_glog2}
+\alias{scale_y_log}
+\alias{scale_x_log}
+\alias{scale_y_log2}
+\alias{scale_x_log2}
 \alias{neglog_breaks}
 \alias{neglog_trans}
 \alias{neglog10_trans}
@@ -34,6 +38,10 @@ scale_y_glog10(...)
 scale_x_glog10(...)
 scale_y_glog2(...)
 scale_x_glog2(...)
+scale_y_log(...)
+scale_x_log(...)
+scale_y_log2(...)
+scale_x_log2(...)
 neglog_breaks(n = 5, base = 10)
 neglog_trans(base = exp(1))
 neglog10_trans()

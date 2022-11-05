@@ -77,13 +77,19 @@ skippedSD(x)
 ```
 
 ## Five Number Summary
-There is a function that computes a so-called five number summary which in 
+This is a function that computes a so-called five number summary which in 
 contrast to function fivenum uses the first and third quartile instead of the 
 lower and upper hinge.
 ```{r}
 fiveNS(x)
 ```
 
+## Seven Number Summary
+Analogously to the five number summary we use quantiles instead of hinges and
+eighths as originally proposed by Tukey.
+```{r}
+sevenNS(x)
+```
 
 ## Coefficient of Variation (CV)
 There are functions to compute the (classical) coefficient of variation as well
