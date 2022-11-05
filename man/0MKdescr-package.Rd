@@ -23,7 +23,7 @@ Depends: \tab R(>= 3.5.0)\cr
 Imports: \tab stats, graphics, ggplot2, scales\cr
 Suggests: \tab knitr, rmarkdown\cr
 License: \tab LGPL-3\cr
-URL: \tab https://www.stamats.de/\cr
+URL: \tab https://github.com/stamats/MKdescr\cr
 }
 library(MKdescr)
 }
