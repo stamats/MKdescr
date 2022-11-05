@@ -1,5 +1,5 @@
 import("stats", "ggplot2")
-importFrom("scales", "trans_new")
+importFrom("scales", "trans_new", "log_trans", "log2_trans")
 importFrom("graphics", "par")
 export(simCorVars,
        glog,
