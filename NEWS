@@ -9,6 +9,7 @@
 - corrected vignette entry (detected by a new CRAN check)
 - added scale_*_log and scale_*_log2 (* = x, y)
 - added Tukey's seven number summary using quantiles
+- changed link in DESCRIPTION file
 
 
 ###########################################################
