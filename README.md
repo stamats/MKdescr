@@ -1,4 +1,4 @@
-# MKdescr
+# <img src="https://github.com/stamats/MKdescr/raw/master/hex-MKdescr.png" alt="MKdescr" width="120"/> &emsp; MKdescr
 The repository includes the development version of R package MKdescr
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
