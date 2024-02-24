@@ -1,6 +1,6 @@
 Package: MKdescr
-Version: 0.8
-Date: 2022-11-08
+Version: 0.9
+Date: 2024-02-24
 Title: Descriptive Statistics
 Authors@R: person("Matthias", "Kohl", role = c("aut", "cre"),
                   email = "Matthias.Kohl@stamats.de", 
