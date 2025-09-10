@@ -7,6 +7,8 @@
 ###########################################################
 - improved labelling of breaks for glog transformations
 - removed table from package help file
+- use aes in combination with .data from package rlang instead of aes_string
+- changed to doi for arxiv article
 
 
 ###########################################################

@@ -1,6 +1,7 @@
 import("stats", "ggplot2")
 importFrom("scales", "trans_new", "log_trans", "log2_trans", "extended_breaks")
 importFrom("graphics", "par")
+importFrom("rlang", ".data")
 export(simCorVars,
        glog,
        glog10,
