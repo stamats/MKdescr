@@ -31,8 +31,12 @@ iqrCV(x, na.rm = FALSE, type = 7, constant = 2*qnorm(0.75))
   CV value.
 }
 \references{
-  C.N.P.G. Arachchige, L.A. Prendergast and R.G. Staudte. Robust analogues
+  C.N.P.G. Arachchige, L.A. Prendergast and R.G. Staudte (2020). Robust Analogs
   to the Coefficient of Variation. https://arxiv.org/abs/1907.01110.
+  
+  C.N.P.G. Arachchige, L.A. Prendergast and R.G. Staudte (2020). Robust analogs to 
+  the coefficient of variation. \emph{J Appl Stat.} \bold{49}(2): 268-290. 
+  doi: 10.1080/02664763.2020.1808599.
 }
 \author{ Matthias Kohl \email{Matthias.Kohl@stamats.de}}
 \examples{
