@@ -3,6 +3,15 @@
 ###############################################################################
 
 ###########################################################
+## Version 1.0
+###########################################################
+- added reference to robust CVs and changed from arXiv article to published 
+  article
+- introduced functions zfactor, medZfactor and iqrZfactor to compute z-factors
+  and z'-factors
+
+
+###########################################################
 ## Version 0.9
 ###########################################################
 - improved labelling of breaks for glog transformations
