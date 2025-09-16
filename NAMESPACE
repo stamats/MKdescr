@@ -46,6 +46,9 @@ export(simCorVars,
        zscore,
        medZscore,
        iqrZscore,
+       zfactor,
+       medZfactor,
+       iqrZfactor,
        illustrate.quantile,
        illustrate.boxplot)
 
