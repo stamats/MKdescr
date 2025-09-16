@@ -95,7 +95,7 @@ sevenNS(x)
 There are functions to compute the (classical) coefficient of variation as well
 as two robust variants. In case of the robust variants, the mean is replaced 
 by the median and the SD is replaced by the (standardized) MAD and 
-the (standardized) IQR, respectively [see Arachchige2019].
+the (standardized) IQR, respectively [see Arachchige2020].
 ```{r}
 ## 5% outliers
 out <- rbinom(100, prob = 0.05, size = 1)
@@ -142,7 +142,7 @@ SMD(x, y, bias.cor = FALSE, var.equal = TRUE)
 
 
 ## z-Score
-There are functions to compute z-score and robust variants of z-score based
+There are functions to compute z-score and robust variants of the z-score based
 on median and MAD, respectively median and IQR.
 ```{r}
 ## 10% outliers
@@ -160,6 +160,19 @@ mean(z.iqr[!out])
 sd(z[!out])
 sd(z.med[!out])
 sd(z.iqr[!out])
+```
+
+
+## z-Factor
+There are functions to compute z-factor and robust variants of the z-factor based
+on median and MAD, respectively median and IQR. The functions can also be used
+to compute z'-factors [see @Zhang1999].
+```{r}
+x <- rnorm(100, mean = 10, sd = 2)
+y <- rnorm(100, mean = 40, sd = 2)
+zfactor(x, y)
+medZfactor(x, y)
+iqrZfactor(x, y)
 ```
 
 
