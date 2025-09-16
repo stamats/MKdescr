@@ -9,10 +9,11 @@ The repository includes the development version of R package MKdescr
 ## Description
 Computation of standardized interquartile range (IQR), Huber-type skipped mean 
 (Hampel (1985), <doi:10.2307/1268758>), robust coefficient of variation (CV) 
-(Arachchige et al. (2019), <doi:10.48550/arXiv.1907.01110>), robust signal to noise ratio (SNR), 
-z-score, standardized mean difference (SMD), as well as functions that support 
-graphical visualization such as boxplots based on quartiles (not hinges), negative 
-logarithms and generalized logarithms for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4)
+(Arachchige et al. (2020), <doi:10.1080/02664763.2020.1808599>), robust signal 
+to noise ratio (SNR), z-score, standardized mean difference (SMD), z-factor 
+(Zhang et al. (1999), <doi:10.1177/108705719900400206>) as well as functions 
+that support graphical visualization such as boxplots based on quartiles (not hinges), 
+negative logarithms and generalized logarithms for 'ggplot2' (Wickham (2016), ISBN:978-3-319-24277-4).
 
 ## Installation
 
